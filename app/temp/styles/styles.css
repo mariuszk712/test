@@ -91,7 +91,7 @@ body {
     }
 .large-hero p {
      margin-bottom: 12px;
-     background-color: rgba(64, 75, 83, 0.3);
+     background-color: rgba(64, 75, 83, 0.5);
      display: inline-block;
      padding: 16px 15px;
        
@@ -139,6 +139,20 @@ body {
         font-weight: 300;
         margin-top: 10px;
     }
+.portfolio {
+    min-height: 100vh;
+    background-color: white;
+    color: #404c54;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 20px;
+}
+spp {
+    border-bottom: 2px solid #404c54;
+    padding-bottom: 10px;
+}
 /*
 @import "base/_mixins";
 @import "modules/_large-hero";
