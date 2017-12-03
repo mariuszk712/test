@@ -1,0 +1,39 @@
+.large-hero {
+    background-image:url("https://images.unsplash.com/photo-1496867506859-2421b3d9a226?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    min-width: 100%;
+    background-position: 20% 1%;
+    position: relative;
+    background-size: cover;
+    
+    &--text {
+        text-align: center;
+       
+        font-size: 2rem;
+        margin-bottom: 12px;
+        
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color:white;
+        font-weight: 100;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+    
+    &--wrapper {
+        padding-top: 10%;
+
+    
+    }
+    
+    p {
+     margin-bottom: 12px;
+     background-color: rgba(64, 75, 83, 0.3);
+     display: inline-block;
+     padding: 16px 15px;
+       
+    }
+    
+}

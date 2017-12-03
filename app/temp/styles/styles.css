@@ -1,0 +1,102 @@
+/*
+@import "normalize.css";
+@import "base/_variables";
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+body {
+    background-color: white;
+}
+.navbar {
+    min-width: 100%;
+    background-color: #404c54;
+    height: 75px;
+    position: relative;
+}
+.navbar--text {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 5px;
+    }
+.navbar--text--blue {
+            color: #4bcaff;
+            display: inline;
+        }
+.navbar--menu {
+        float: right;
+    }
+.navbar ul {
+        margin: 0;
+        padding: 0;
+    }
+.navbar li {
+        list-style: none;
+        float: left;
+        padding: 11px 20px;
+        border: 2px solid #4bcaff;
+        margin-left: 20px;
+        top: 50%;
+        -webkit-transform: translateY(30%);
+                transform: translateY(30%);
+        letter-spacing: 1px;
+    }
+.navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+.wrapper {
+    max-width: 90%;
+    margin: 0 30px;
+    
+}
+.large-hero {
+    background-image:url("https://images.unsplash.com/photo-1496867506859-2421b3d9a226?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    min-width: 100%;
+    background-position: 20% 1%;
+    position: relative;
+    background-size: cover;
+    
+}
+.large-hero--text {
+        text-align: center;
+       
+        font-size: 2rem;
+        margin-bottom: 12px;
+        
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color:white;
+        font-weight: 100;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+.large-hero--wrapper {
+        padding-top: 10%;
+
+    
+    }
+.large-hero p {
+     margin-bottom: 12px;
+     background-color: rgba(64, 75, 83, 0.3);
+     display: inline-block;
+     padding: 16px 15px;
+       
+    }
+/*
+@import "base/_mixins";
+@import "modules/_large-hero";
+@import "modules/_btn";
+*/

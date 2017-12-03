@@ -1,0 +1,48 @@
+.navbar {
+    min-width: 100%;
+    background-color: #404c54;
+    height: 75px;
+    position: relative;
+    
+    &--text {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 5px;
+        
+        &--blue {
+            color: $mainBlue;
+            display: inline;
+        }
+    }
+    
+    &--menu {
+        float: right;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        list-style: none;
+        float: left;
+        padding: 11px 20px;
+        border: 2px solid $mainBlue;
+        margin-left: 20px;
+        top: 50%;
+        transform: translateY(30%);
+        letter-spacing: 1px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "travel-site",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -17,5 +17,18 @@
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^2.1.2",
     "postcss-simple-vars": "^4.1.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariuszk712/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariuszk712/test/issues"
+  },
+  "homepage": "https://github.com/mariuszk712/test#readme"
 }
