@@ -1,0 +1,49 @@
+.skills {
+    background-color: $mainBlue;
+    min-width: 100%;
+    min-height: 100vh;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 200;
+    
+    &--title {
+        margin-top: 20px;
+        position: absolute;
+        
+    }
+    sp {
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+    }
+    
+    &-icons {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        &-img {
+           display: inline-block;
+           margin-right: 20px; 
+        }
+    }
+    
+    
+    .inline {
+        width: 200px;
+        display: inline-block;
+        margin-top: 30vh; 
+    }
+    
+    &-desc {
+        color: white;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    
+
+ 
+}
