@@ -1,8 +1,9 @@
 .navbar {
     min-width: 100%;
-    background-color: #404c54;
-    height: 75px;
+    background-color: black;
+    height: 70px;
     position: relative;
+    
     
     &--text {
         font-size: 1.4rem;
@@ -14,6 +15,9 @@
         font-weight: 700;
         letter-spacing: 5px;
         
+        
+        
+        
         &--blue {
             color: $mainBlue;
             display: inline;
@@ -22,6 +26,7 @@
     
     &--menu {
         float: right;
+        
     }
     
     ul {
@@ -38,11 +43,18 @@
         top: 50%;
         transform: translateY(30%);
         letter-spacing: 1px;
+        
     }
     
     a {
         color: white;
         text-decoration: none;
         font-weight: 300;
+         &:hover {
+            color: $mainBlue;
+        }
+        
     }
+    
+    
 }
