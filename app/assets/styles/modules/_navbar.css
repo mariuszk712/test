@@ -1,8 +1,10 @@
 .navbar {
-    min-width: 100%;
-    background-color: black;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
     height: 70px;
     position: relative;
+    position: fixed;
+    z-index: 2;
     
     
     &--text {
