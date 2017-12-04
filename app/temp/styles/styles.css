@@ -12,7 +12,7 @@ body {
 }
 .navbar {
     width: 100%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.4);
     height: 70px;
     position: relative;
     position: fixed;
@@ -20,6 +20,9 @@ body {
     
     
 }
+.navbar--dark {
+        background-color: rgba(0,0,0,1);
+    }
 .navbar--text {
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -61,6 +64,9 @@ body {
         font-weight: 300;
         
     }
+.navbar a.is-current-link {
+            color: #4bcaff;
+        }
 .navbar a:hover {
             color: #4bcaff;
         }
@@ -152,6 +158,7 @@ body {
         text-align: center;
         font-weight: 300;
         margin-top: 10px;
+        
     }
 .portfolio {
     min-height: 100vh;
@@ -211,7 +218,16 @@ spp {
 }
 .reveal-item {
     opacity: 0;
+    -webkit-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
 }
+.reveal-item--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
 /*
 @import "base/_mixins";
 @import "modules/_large-hero";

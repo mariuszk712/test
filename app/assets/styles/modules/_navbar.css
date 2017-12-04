@@ -1,11 +1,14 @@
 .navbar {
     width: 100%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.4);
     height: 70px;
     position: relative;
     position: fixed;
     z-index: 2;
     
+    &--dark {
+        background-color: rgba(0,0,0,1);
+    }
     
     &--text {
         font-size: 1.4rem;
@@ -52,6 +55,11 @@
         color: white;
         text-decoration: none;
         font-weight: 300;
+        
+        &.is-current-link {
+            color: $mainBlue;
+        }
+        
          &:hover {
             color: $mainBlue;
         }

@@ -1,10 +1,13 @@
-function Person(name, color) {
-    this.name = name;
-    this.color = color;
-    this.greet = function () {
-        console.log("Hello there " + this.name);
+class Person{
+    constructor(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+    
+    
+    greet() {
+        console.log("Hi there " + this.name);
     }
 }
 
-
-console.log("hello from person.js");
+module.exports = Person;

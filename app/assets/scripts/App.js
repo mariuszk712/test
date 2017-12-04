@@ -1,11 +1,7 @@
-var Person = require('./modules/Person');
+var $ = require('jquery');
+import RevealOnScroll from './modules/RevealOnScroll';
+import StickyHeader from './modules/StickyHeader';
 
-/*
-var john = new Person("John", "blue");
-john.greet();
-
-var jane = new Person("Jane", "yellow");
-console.log(jane.color);
-*/
-
-console.log(Person);
+new RevealOnScroll($(".reveal-title"), "85%");
+new RevealOnScroll($(".skills-icons-img"), "55%");
+var stickyHeader = new StickyHeader();
