@@ -54,7 +54,13 @@ body {
         }
 .navbar--menu {
         float: none;
+        display: none;
     }
+.navbar--menu--is-visible {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 @media (min-width: 530px) {
 .navbar--menu {
             float: right;
@@ -67,10 +73,12 @@ body {
         margin: 0;
         padding: 0;
         margin-top: 70px;
+        width: 100%;
     }
 @media (min-width: 530px) {
 .navbar ul {
-            margin-top: 0
+            margin-top: 0;
+            width: inherit
     }
     }
 .navbar li {
