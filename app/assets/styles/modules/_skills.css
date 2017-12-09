@@ -9,8 +9,25 @@
     position: relative;
     font-weight: 200;
     
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-column-gap: 10px;
+        
+        @mixin atSmall {
+           grid-template-columns: repeat(10,1fr); 
+        }
+        
+        img {
+            max-width: 200px;
+            object-position: 50% 50%;
+            object-fit: auto;
+            max-height: 200px;
+        }
+    }
+    
     &--title {
-        margin-top: 20px;
+        margin-top: 80px;
         position: absolute;
         
     }
@@ -23,18 +40,11 @@
         position: relative;
         max-width: 1200px;
         margin: 0 auto;
+        padding-top: 30vh;
         
         &-img {
-           display: inline-block;
-           margin-right: 20px; 
+           grid-column: span 2;
         }
-    }
-    
-    
-    .inline {
-        width: 200px;
-        display: inline-block;
-        margin-top: 30vh; 
     }
     
     &-desc {
@@ -45,6 +55,5 @@
         
     }
     
-
  
 }
