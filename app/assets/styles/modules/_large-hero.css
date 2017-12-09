@@ -3,14 +3,18 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100%;
-    background-position: 20% 1%;
+    background-position: center;
     position: relative;
     background-size: cover;
+    
+    @mixin atSmall {
+        background-position: 20% 1%;
+    }
     
     &--text {
         text-align: center;
        
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 12px;
         
         text-transform: uppercase;
@@ -20,12 +24,20 @@
         max-width: 1000px;
         margin: 0 auto;
         
+        @mixin atSmall {
+            font-size: 2rem;
+        }
+        
         
 
     }
     
     &--wrapper {
-        padding-top: 10%;
+        padding-top: 25%;
+        
+        @mixin atSmall {
+            padding-top: 10%;
+        }
 
     
     }

@@ -10,3 +10,9 @@ body {
 
 $mainBlue: #4bcaff;
 $mainGrey: ##404c54;
+
+@define-mixin atSmall {
+    @media (min-width: 530px) {
+        @mixin-content;
+    }
+}

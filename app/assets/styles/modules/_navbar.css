@@ -2,7 +2,6 @@
     width: 100%;
     background-color: rgba(0,0,0,0.4);
     height: 70px;
-    position: relative;
     position: fixed;
     z-index: 2;
     
