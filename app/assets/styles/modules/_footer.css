@@ -9,17 +9,35 @@
         position: relative;
         color: #515f67;
         display: inline-block;
-        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: 20%;
+        
+        @mixin atSmall {
+            margin-top: 20px;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        
+    
 
     }
 }
 
 .btn {
-    display: inline-block;
-    float: right;
     background-color: $mainBlue;
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    margin-top: 15px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    
+    @mixin atSmall {
+        display: inline-block;
+        float: right;
+        background-color: $mainBlue;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
 }

@@ -230,7 +230,7 @@ body {
 }
 .skills--grid {
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(1,1fr);
         grid-column-gap: 10px;
     }
 @media (min-width: 530px) {
@@ -245,6 +245,11 @@ body {
             -o-object-fit: auto;
                object-fit: auto;
             max-height: 200px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
         }
 .skills--title {
         margin-top: 80px;
@@ -321,18 +326,41 @@ spp {
         position: relative;
         color: #515f67;
         display: inline-block;
-        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: 20%;
+        
+    
 
     }
+@media (min-width: 530px) {
+.footer-text {
+            margin-top: 20px;
+            margin-bottom: 0;
+            margin-left: 0
+        
+    
+
+    }
+    }
 .btn {
-    display: inline-block;
-    float: right;
     background-color: #4bcaff;
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    margin-top: 15px;
+    margin-left: 35%;
+    margin-bottom: 20px;
 }
+@media (min-width: 530px) {
+.btn {
+        display: inline-block;
+        float: right;
+        background-color: #4bcaff;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 15px
+}
+    }
 .reveal-item {
     opacity: 0;
     -webkit-transition: all 1.5s ease-out;
