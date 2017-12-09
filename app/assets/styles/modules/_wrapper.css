@@ -3,4 +3,21 @@
     margin: 0 auto;
     padding: 0 5%;
     
+    &--mobile-menu {
+        
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        
+        @mixin atSmall {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 0 5%;
+            min-width: 200px;
+            
+        }
+        
+    }
+    
+    
 }

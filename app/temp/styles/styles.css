@@ -32,17 +32,32 @@ body {
         color: white;
         font-weight: 700;
         letter-spacing: 5px;
+        margin-left: 5%;
+    }
+@media (min-width: 530px) {
+.navbar--text {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            position: absolute;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 5px;
+            margin-left: 0
+    }
     }
 .navbar--text--blue {
             color: #4bcaff;
             display: inline;
         }
 .navbar--menu {
-        float: right;
-        display: none;
+        float: none;
     }
 @media (min-width: 530px) {
 .navbar--menu {
+            float: right;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex
@@ -51,8 +66,26 @@ body {
 .navbar ul {
         margin: 0;
         padding: 0;
+        margin-top: 70px;
+    }
+@media (min-width: 530px) {
+.navbar ul {
+            margin-top: 0
+    }
     }
 .navbar li {
+        list-style: none;
+        text-align: center;
+        border: 2px solid #4bcaff;
+        background-color: black;
+        padding: 20px;
+        letter-spacing: 1px;
+        
+    }
+@media (min-width: 530px) {
+.navbar li {
+            
+        
         list-style: none;
         float: left;
         padding: 11px 20px;
@@ -61,8 +94,9 @@ body {
         top: 50%;
         -webkit-transform: translateY(30%);
                 transform: translateY(30%);
-        letter-spacing: 1px;
+        letter-spacing: 1px
         
+    }
     }
 .navbar a {
         color: white;
@@ -76,12 +110,42 @@ body {
 .navbar a:hover {
             color: #4bcaff;
         }
+.mobile-menu-icon {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+@media (min-width: 530px) {
+.mobile-menu-icon {
+        display: none
+}
+    }
 .wrapper {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 5%;
     
+    
 }
+.wrapper--mobile-menu {
+        
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        
+    }
+@media (min-width: 530px) {
+.wrapper--mobile-menu {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 0 5%;
+            min-width: 200px
+        
+    }
+    }
 .large-hero {
     background-image:url("https://images.unsplash.com/photo-1496867506859-2421b3d9a226?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
     background-repeat: no-repeat;

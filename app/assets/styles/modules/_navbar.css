@@ -9,6 +9,7 @@
         background-color: rgba(0,0,0,1);
     }
     
+    
     &--text {
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -18,6 +19,19 @@
         color: white;
         font-weight: 700;
         letter-spacing: 5px;
+        margin-left: 5%;
+        
+        @mixin atSmall {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 5px;
+            margin-left: 0;
+        }
         
         &--blue {
             color: $mainBlue;
@@ -26,10 +40,10 @@
     }
     
     &--menu {
-        float: right;
-        display: none;
+        float: none;
         
         @mixin atSmall {
+            float: right;
             display: flex;
         }
     }
@@ -37,9 +51,26 @@
     ul {
         margin: 0;
         padding: 0;
+        margin-top: 70px;
+        @mixin atSmall {
+            margin-top: 0;
+    
+        }
     }
     
     li {
+        list-style: none;
+        text-align: center;
+        border: 2px solid $mainBlue;
+        background-color: black;
+        padding: 20px;
+        letter-spacing: 1px;
+        
+        
+        
+        @mixin atSmall {
+            
+        
         list-style: none;
         float: left;
         padding: 11px 20px;
@@ -48,6 +79,8 @@
         top: 50%;
         transform: translateY(30%);
         letter-spacing: 1px;
+            
+        }
         
     }
     
@@ -67,4 +100,17 @@
     }
     
     
+}
+
+.mobile-menu-icon {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+    @mixin atSmall {
+        display: none;
+    }
 }
