@@ -19,9 +19,6 @@
         font-weight: 700;
         letter-spacing: 5px;
         
-        
-        
-        
         &--blue {
             color: $mainBlue;
             display: inline;
@@ -30,7 +27,11 @@
     
     &--menu {
         float: right;
+        display: none;
         
+        @mixin atSmall {
+            display: flex;
+        }
     }
     
     ul {

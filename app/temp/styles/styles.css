@@ -39,7 +39,14 @@ body {
         }
 .navbar--menu {
         float: right;
-        
+        display: none;
+    }
+@media (min-width: 530px) {
+.navbar--menu {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
     }
 .navbar ul {
         margin: 0;
