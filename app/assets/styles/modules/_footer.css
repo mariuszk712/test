@@ -10,12 +10,14 @@
         color: #515f67;
         display: inline-block;
         margin-bottom: 15px;
-        margin-left: 20%;
+        text-align: center;
+        width: 100%;
         
         @mixin atSmall {
             margin-top: 20px;
             margin-bottom: 0;
             margin-left: 0;
+            width: auto;
         }
         
     
@@ -30,6 +32,7 @@
     padding: 10px 20px;
     margin-left: 35%;
     margin-bottom: 20px;
+    
     
     @mixin atSmall {
         display: inline-block;
